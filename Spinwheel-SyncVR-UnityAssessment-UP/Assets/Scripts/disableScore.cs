@@ -12,7 +12,7 @@ public class disableScore : MonoBehaviour
     public GameObject scorePannel;
 
 
-    // Update is called once per frame
+    // checks to see if blowing mode is on and if so disables and enables the needed panels accordingly.
     void Update()
     {
        

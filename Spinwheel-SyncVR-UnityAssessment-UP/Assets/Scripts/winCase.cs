@@ -28,14 +28,15 @@ public class winCase : MonoBehaviour
         if (inputMethod.keyboardMode == true)
         {
         displayScore = Mathf.MoveTowards(displayScore, points, transitionSpeed * Time.deltaTime);
-       // Debug.Log(displayScore);
 
         //add points for blowing (ran into complications with too drastic fluctuations in mic value)
+
         /* float pointsF = Loudness_script.loudness; 
         points += (int)pointsF / 10; */
 
         updateScoreDisplay();
 
+        //Checks to see if the player wins and if this is the case transitions to the win screen
         if(points == 50)
         {
             points = 50;
@@ -43,6 +44,7 @@ public class winCase : MonoBehaviour
             SceneManager.LoadScene(2);
 
         }
+        //Checks to see if the player loses and if this is the case transitions to the lose screen
         else if (points < 0)
         {
             WindObstacle.windStrength = 0;
@@ -53,19 +55,16 @@ public class winCase : MonoBehaviour
 
 
         }
-        Debug.Log(points);
+        
              
     }    
 
+    //Updates the score in the canvas
     public void updateScoreDisplay()
     {
         scoreText.text = string.Format("Score: {0:000}", displayScore);
     }
-    
-    void OnClick()
-    {
-        Debug.Log("clicked!");
-    }
+S
 
 
 }

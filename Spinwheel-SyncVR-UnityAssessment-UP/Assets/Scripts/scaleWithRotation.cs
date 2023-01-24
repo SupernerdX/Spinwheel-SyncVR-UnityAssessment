@@ -18,6 +18,9 @@ float timer;
     void Start()
     {
        // growSound = GetComponent<AudioSource>();
+
+
+       //checks to see the game mods is set to keyboard mode.
        if (inputMethod.keyboardMode == true)
         {
        InvokeRepeating("windSubtraction", 5.0f, 0.4f);
@@ -30,7 +33,7 @@ float timer;
 
       
 
-           //checks to see if the space key is pressed, and if this is the case increases the point anc rotation varibles by 1.
+           //Checks to see if the space key is pressed, and if this is the case increases the point anc rotation varibles by 1.
          if (Input.GetKeyDown(KeyCode.Space))
         {
             rotation += 1;
@@ -51,9 +54,9 @@ float timer;
     
     }
 
+    //Subtracts from points and scale value bases on the windStrength  
      void windSubtraction()
-    {
-        
+    {   
         winCase.points += WindObstacle.windStrength;
         scaleValue -= 0.01f;
     

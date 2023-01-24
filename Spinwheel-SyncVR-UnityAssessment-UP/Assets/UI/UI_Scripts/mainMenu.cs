@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class mainMenu : MonoBehaviour
 {
 
-
+//used for changing between scenes
    public void playGame()
    {
     SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+1);

@@ -16,7 +16,7 @@ public class scaleWithSpacebar : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        //Scales the pinwheel based on howmany times the spacebar is pressed.
          transform.localScale = Vector3.Lerp(minScale, maxScale, scaleWithRotation.scaleValue);
          
        

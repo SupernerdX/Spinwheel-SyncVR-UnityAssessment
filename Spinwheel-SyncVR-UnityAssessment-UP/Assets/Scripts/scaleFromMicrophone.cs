@@ -17,7 +17,7 @@ public class scaleFromMicrophone : MonoBehaviour
         
     }
 
-    // Update is called once per frame
+    // Detects how loud your microphon is and assigns it a value to be used later in the project.
     void Update()
     {
    

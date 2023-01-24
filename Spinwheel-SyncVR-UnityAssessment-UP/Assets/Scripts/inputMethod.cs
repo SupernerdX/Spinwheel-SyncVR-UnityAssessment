@@ -18,6 +18,7 @@ public class inputMethod : MonoBehaviour
 
     }
 
+//checks to see if the blowing mode is on and if this is the case disables the keyboard mode.
    public void isBlowing()
    {
     ActivateAndDeactivate.isBlowing = true;

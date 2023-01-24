@@ -12,7 +12,7 @@ public class WindObstacle : MonoBehaviour
       windStrength = -1;
     }
 
-    // Update is called once per frame
+    // Rotates the pinwheel in the oppiste direction based on windStrength
     void Update()
     {
        transform.Rotate(0,0, windStrength * 20 * Time.deltaTime);

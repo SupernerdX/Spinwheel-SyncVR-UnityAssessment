@@ -13,7 +13,7 @@ public class ActivateAndDeactivate : MonoBehaviour
        
     }
 
-    // Update is called once per frame
+    // disables the script if blowing mode is off.
     void Update()
     {
         if (isBlowing == false)
