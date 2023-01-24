@@ -7,7 +7,7 @@ public class disableScore : MonoBehaviour
 {
     public static bool isScoring = false;
 
-    public Text blowingInstructions;
+    public GameObject freePlayPanel;
 
     public GameObject scorePannel;
 
@@ -32,16 +32,17 @@ public class disableScore : MonoBehaviour
     public void disScore()
     {
         scorePannel.SetActive(false);
-        //Time.timeScale = 1f;
-        blowingInstructions.text = "Blow into your microphone to spin the pinwheel!";
+        freePlayPanel.SetActive(true);
+       
       
     }
 
     public void activateScore()
     {
         scorePannel.SetActive(true);
-        //Time.timeScale = 0f;
-          blowingInstructions.text = " ";
+        freePlayPanel.SetActive(false);
+
+         
        
     }
 }
