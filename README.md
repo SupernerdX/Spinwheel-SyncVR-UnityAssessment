@@ -1,4 +1,4 @@
-# Spinwheel-SyncVr-UnityAssessment-REPO-2
+# Spinwheel-SyncVr-UnityAssessment
 
 Instructions on ow to install the project:
 Click on the code button and choose the download zip option at the bottom of the drop-down. Once the zip file has been downloaded, extract it and go into the folder. Provided in the file once it is unzipped are two folders. “Spinwheel EXE” is the built application of the Assessment, and “Spinwheel-SyncVR-UnityAssessment-UP” is the Unity file. To open the Unity file, open the Unity Hub, click on the drop-down next to the open button and then choose the add project from disk option and then select the unity file.
