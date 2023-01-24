@@ -64,7 +64,6 @@ public class winCase : MonoBehaviour
     {
         scoreText.text = string.Format("Score: {0:000}", displayScore);
     }
-S
 
 
 }
